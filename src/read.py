@@ -51,7 +51,6 @@ class Inputfile:
         mfile = self.read_file(adress)
         self.first_line_info(mfile[0])
         for i in range(1, self.street_number + 1):
-            print(mfile[i])
             self.add_road(mfile[i])
         for line in mfile[self.street_number + 1:]:
             self.add_car(line)
