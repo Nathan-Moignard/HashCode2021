@@ -13,6 +13,4 @@ def main(arguments):
         print("File missing")
         return 84
     inp = Inputfile(arguments[1])
-    print(inp.car)
-    print(inp.streets)
     return (algo(inp))
