@@ -24,6 +24,7 @@ class Intersection:
 
     def print(self):
         print(self.intersection)
+        print(f"{len(self.streets)}")
         for street in self.streets:
             street.print()
 
