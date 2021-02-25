@@ -6,6 +6,7 @@
 ##
 
 from src.read import Inputfile
+from src.algorithm.algorithm import algo
 
 def main(arguments):
     if (len(arguments) < 2):
@@ -14,4 +15,4 @@ def main(arguments):
     inp = Inputfile(arguments[1])
     print(inp.car)
     print(inp.streets)
-    return 0
+    return (algo(inp))
